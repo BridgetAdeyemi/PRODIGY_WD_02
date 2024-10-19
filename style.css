@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding: 0 2rem;
+  background-color: #fff;
+  height: 100vh;
+}
+.stopwatch {
+  width: 100%;
+  max-width: 400px;
+  height: 500px;
+  border-radius: 15px;
+  background-color: #21223f;
+
+  box-shadow: 0px 4px 20px rgb(5, 5, 14, 0.5);
+  position: relative;
+}
+.stopwatch .display {
+  text-align: center;
+  color: #ddd;
+  background-color: #292b4e;
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 2rem 2rem 3rem 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: monospace;
+  width: 80%;
+  box-shadow: 0px 2px 20px #060613;
+}
+
+.stopwatch .buttons {
+  text-align: center;
+}
+.stopwatch .buttons button {
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #cfcbcb;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  flex: 1;
+}
+.stopwatch .buttons :nth-child(1) {
+  /*background-color: rgba(207, 7, 7, 0.877);*/
+  background-color: rgb(2, 113, 128);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  transition: background-color 0.5s ease-in-out;
+  margin-right: 0.1rem;
+  box-shadow: 0px 2px 20px #060613;
+}
+.stopwatch .buttons :nth-child(2) {
+  background-color: #155ca8;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  transition: background-color 0.5s ease-in-out;
+  margin-right: 0.1rem;
+  box-shadow: 0px 2px 20px #060613;
+}
+.stopwatch .buttons :nth-child(3) {
+  background-color: #bb36a9;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin-right: 0.1rem;
+  transition: background-color 0.5s ease-in-out;
+  box-shadow: 0px 2px 20px #060613;
+}
+.stopwatch .buttons :nth-child(1):hover {
+  background-color: rgb(3, 66, 75);
+}
+.stopwatch .buttons :nth-child(2):hover {
+  background-color: #0e437c;
+}
+.stopwatch .buttons :nth-child(3):hover {
+  background-color: #383c41;
+}
+#laps {
+  max-height: 220px;
+  overflow-y: auto;
+  margin: 2rem;
+  background-color: #292b4e;
+  border-radius: 5px;
+  padding: 1rem;
+  color: #fff;
+}
+.lap-item {
+  text-align: left;
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #cfcbcb;
+  overflow-y: visible;
+}
+#clearLapsBtn {
+  display: block;
+  padding: 8px 25px;
+  background-color: #31325c;
+  border: none;
+  color: #ddd;
+  font-weight: bold;
+  border-radius: 5px;
+
+  margin: 1rem auto 0px auto;
+  font-size: 1rem;
+  box-shadow: 0px 2px 20px #060613;
+  transition: background-color 0.5s ease;
+}
+#clearLapsBtn:hover {
+  background-color: #21223f;
+}
