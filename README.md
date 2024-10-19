@@ -12,4 +12,4 @@ This project is a simple stopwatch application built using HTML, CSS, and JavaSc
 - JavaScript: Handles the stopwatch logic, including time tracking and lap functionality.
 
 **Live Demo**  
-https://bridgetadeyemi.github.io/PRODIGY_WD_02/
+Checkout the live version of the project here https://bridgetadeyemi.github.io/PRODIGY_WD_02/
